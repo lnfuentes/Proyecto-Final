@@ -1,0 +1,339 @@
+// ** VARIABLES ** //
+
+// colores
+$negro: #000;
+$blanco: #fff;
+$amarillo: #FAA900;
+$amarilloOscuro: #d18f00;
+$verde: #090;
+$gris: #ccc;
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 400;
+}
+
+h4 {
+    margin: 15px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 16px;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.seccion {
+    padding: 25px 0;
+}
+
+.preparacion {
+    width: 500px;
+    margin: 0 20px;
+}
+
+/* HEADER */
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    height: 600px;
+    text-align: center;
+
+    h1 {
+        color: $blanco;
+        margin: 150px 0 0 0;
+    }
+}
+
+.logo {
+    display: inline-block;
+    color: $blanco;
+    font-size: 35px;
+    padding: 30px 0;
+
+    span {
+        color: $amarillo;
+        font-weight: bold;
+    }
+
+    &:hover {
+        color: $blanco;
+    }
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+
+    li{
+        a {
+            color: $blanco;
+            font-size: 18px;
+            padding: 20px 0;
+            transition: all .3s ease;
+
+            &:hover {
+                color: $amarillo;
+            }
+        }
+    }
+}
+
+/* CONTENIDO */
+.informacion {
+    background-color: $negro;
+    color: $gris;
+    padding: 20px 0;
+
+    h2{
+        text-align: center;
+        font-size: 40px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.recetas {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: center;
+
+    .recetas-destacadas{
+        .imagen-destacada{
+            overflow: hidden;
+            img{
+                transition: .3s all ease-in-out;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedor-img {
+    .imagen-receta {
+        overflow: hidden;
+        margin-bottom: 20px;
+        
+        img{ 
+            transition: all .3s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+/* FOOTER */
+.footer {
+    background-color: $negro;
+    color: $gris;
+
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.redes-sociales{
+    a{
+        i{
+            color: $blanco;
+            font-size: 22px;
+            margin: 0 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+/* -- PAGINAS INTERNAS -- */
+
+.internas {
+    background-color: $negro;
+    height: auto;
+}
+
+/* RECETAS */
+
+.colapsado {
+    a{
+        color: $blanco;
+
+        &:focus,
+        &:hover{
+            color: $blanco;
+        }
+
+        &:hover{
+            background-color: $amarilloOscuro;
+        }
+    }
+}
+
+.receta{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .recetas-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .recetas-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* NOSOTROS */
+
+@media (min-width: 992px){
+    .nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.imagen-nosotros{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nosotros {
+    .parrafo-nosotros {
+        line-height: 2;
+
+        h3{
+            padding: 10px 0;
+        }
+    }    
+}
+
+/* CONTACTO */
+.formulario {
+    background: black;
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(#444444));
+    background: linear-gradient(0deg, black 0%, #444444 100%);
+    padding: 20px 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+
+    .campos{
+        margin: 20px 0;
+
+        label{
+            color: $blanco;
+            text-transform: uppercase;
+        }
+
+        input,
+        select,
+        textarea{
+            margin: 10px 0;
+            padding: 10px;
+            display: block;
+            width: 100%;
+            background-color: $blanco;
+            border: 1px solid #acacac;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="checkbox"] {
+            width: 30px;
+            display: inline;
+        }
+
+        textarea {
+            height: 200px;
+        }
+    }
+}
+
+.btn {
+    padding: 10px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: $blanco;
+    font-size: 18px;
+}
+
+.btn-enviar {
+    background-color: $verde;
+}
+
+.btn-reestablecer {
+    background-color: $amarillo;
+}
