@@ -1,8 +1,6 @@
-@use '../base/variables' as v;
-
 .footer {
-    background-color: v.$negro;
-    color: v.$gris;
+    background-color: $negro;
+    color: $gris;
 
     .contenedor-footer {
         display: flex;
@@ -14,7 +12,7 @@
 .redes-sociales{
     a{
         i{
-            color: v.$blanco;
+            color: $blanco;
             font-size: 22px;
             margin: 0 10px;
             padding-right: 10px;

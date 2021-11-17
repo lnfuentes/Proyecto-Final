@@ -1,2 +1,12 @@
-@use 'base';
-@use 'layout';
+@import 'base/variables';
+@import 'base/globales';
+
+// UI 
+@import 'layout/header';
+@import 'layout/contenido';
+@import 'layout/footer';
+
+// Internas
+@import 'layout/internas/recetas';
+@import 'layout/internas/nosotros';
+@import 'layout/internas/contacto';

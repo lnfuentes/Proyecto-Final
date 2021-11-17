@@ -1,16 +1,14 @@
-@use '../base/variables' as v;
-
 .colapsado {
     a{
-        color: v.$blanco;
+        color: $blanco;
 
         &:focus,
         &:hover{
-            color: v.$blanco;
+            color: $blanco;
         }
 
         &:hover{
-            background-color: v.$amarilloOscuro;
+            background-color: $amarilloOscuro;
         }
     }
 }

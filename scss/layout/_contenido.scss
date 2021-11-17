@@ -1,8 +1,6 @@
-@use '../base/variables' as v;
-
 .informacion {
-    background-color: v.$negro;
-    color: v.$gris;
+    background-color: $negro;
+    color: $gris;
     padding: 20px 0;
 
     h2{
