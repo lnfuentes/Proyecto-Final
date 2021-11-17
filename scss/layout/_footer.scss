@@ -1,0 +1,23 @@
+@use '../base/variables' as v;
+
+.footer {
+    background-color: v.$negro;
+    color: v.$gris;
+
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.redes-sociales{
+    a{
+        i{
+            color: v.$blanco;
+            font-size: 22px;
+            margin: 0 10px;
+            padding-right: 10px;
+        }
+    }
+}

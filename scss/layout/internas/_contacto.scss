@@ -1,0 +1,60 @@
+@use '../base/variables' as v; 
+
+/* CONTACTO */
+.formulario {
+    background: black;
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(#444444));
+    background: linear-gradient(0deg, black 0%, #444444 100%);
+    padding: 20px 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+
+    .campos{
+        margin: 20px 0;
+
+        label{
+            color: v.$blanco;
+            text-transform: uppercase;
+        }
+
+        input,
+        select,
+        textarea{
+            margin: 10px 0;
+            padding: 10px;
+            display: block;
+            width: 100%;
+            background-color: v.$blanco;
+            border: 1px solid #acacac;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="checkbox"] {
+            width: 30px;
+            display: inline;
+        }
+
+        textarea {
+            height: 200px;
+        }
+    }
+}
+
+.btn {
+    padding: 10px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: v.$blanco;
+    font-size: 18px;
+}
+
+.btn-enviar {
+    background-color: v.$verde;
+}
+
+.btn-reestablecer {
+    background-color: v.$amarillo;
+}

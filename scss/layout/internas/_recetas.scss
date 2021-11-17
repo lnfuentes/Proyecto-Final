@@ -1,0 +1,38 @@
+@use '../base/variables' as v;
+
+.colapsado {
+    a{
+        color: v.$blanco;
+
+        &:focus,
+        &:hover{
+            color: v.$blanco;
+        }
+
+        &:hover{
+            background-color: v.$amarilloOscuro;
+        }
+    }
+}
+
+.receta{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .recetas-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .recetas-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 20px;
+    }
+}

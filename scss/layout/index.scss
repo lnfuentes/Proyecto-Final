@@ -1,0 +1,10 @@
+@forward 'header';
+@forward 'contenido';
+@forward 'footer';
+
+
+// internas 
+
+@forward 'internas/recetas';
+@forward 'internas/nosotros';
+@forward 'internas/contacto';

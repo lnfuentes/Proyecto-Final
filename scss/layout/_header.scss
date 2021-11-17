@@ -1,0 +1,55 @@
+@use '../base/variables' as v;
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    height: 600px;
+    text-align: center;
+
+    h1 {
+        color: v.$blanco;
+        margin: 150px 0 0 0;
+    }
+}
+
+.logo {
+    display: inline-block;
+    color: v.$blanco;
+    font-size: 35px;
+    padding: 30px 0;
+
+    span {
+        color: v.$amarillo;
+        font-weight: bold;
+    }
+
+    &:hover {
+        color: v.$blanco;
+    }
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+
+    li{
+        a {
+            color: v.$blanco;
+            font-size: 18px;
+            padding: 20px 0;
+            transition: all .3s ease;
+
+            &:hover {
+                color: v.$amarillo;
+            }
+        }
+    }
+}

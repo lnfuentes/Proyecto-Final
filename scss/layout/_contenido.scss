@@ -1,0 +1,54 @@
+@use '../base/variables' as v;
+
+.informacion {
+    background-color: v.$negro;
+    color: v.$gris;
+    padding: 20px 0;
+
+    h2{
+        text-align: center;
+        font-size: 40px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.recetas {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: center;
+
+    .recetas-destacadas{
+        .imagen-destacada{
+            overflow: hidden;
+            img{
+                transition: .3s all ease-in-out;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedor-img {
+    .imagen-receta {
+        overflow: hidden;
+        margin-bottom: 20px;
+        
+        img{ 
+            transition: all .3s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
