@@ -50,8 +50,18 @@
 
 .btn-enviar {
     background-color: $verde;
+    
+    &:hover{
+        color: $blanco;
+        background-color: darken($verde, 8);
+    }
 }
 
 .btn-reestablecer {
     background-color: $amarillo;
+
+    &:hover{
+        color: $blanco;
+        background-color: darken($amarillo, 8);
+    }
 }

@@ -1,11 +1,16 @@
 .footer {
     background-color: $negro;
     color: $gris;
+    padding: 20px 0;
 
     .contenedor-footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @media (min-width: 768px){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        display: block;
+        text-align: center;
     }
 }
 
@@ -14,8 +19,12 @@
         i{
             color: $blanco;
             font-size: 22px;
-            margin: 0 10px;
-            padding-right: 10px;
+            margin: 0 20px;
+            padding: 20px 0;
+
+            @media (min-width: 768px){
+                padding-bottom: 0;
+            }
         }
     }
 }

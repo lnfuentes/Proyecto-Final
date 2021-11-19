@@ -57,10 +57,8 @@ p {
   padding: 25px 0;
 }
 
-.internas {
+.bg-negro {
   background-color: #000;
-  height: auto;
-  text-align: center;
 }
 
 .banner {
@@ -73,18 +71,26 @@ p {
 .header {
   height: 600px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header h1 {
   color: #fff;
-  margin: 150px 0 0 0;
 }
 
 .logo {
   display: inline-block;
   color: #fff;
   font-size: 35px;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .logo span {
@@ -96,43 +102,58 @@ p {
   color: #fff;
 }
 
-.navegacion {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-  padding: 20px 0;
-}
-
-.navegacion li a {
+.navegacion i {
   color: #fff;
-  font-size: 18px;
-  padding: 20px 0;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  font-size: 35px;
 }
 
-.navegacion li a:hover {
+.navegacion .container-fluid {
+  padding: 0;
+}
+
+.nav-secciones {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-secciones a {
+  color: #fff;
+  margin-right: 20px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.1);
+}
+
+@media (min-width: 768px) {
+  .nav-secciones a {
+    border: none;
+  }
+}
+
+.nav-secciones a:hover {
   color: #FAA900;
+}
+
+.nav-secciones a:last-child {
+  border: none;
 }
 
 .informacion {
   background-color: #000;
-  color: #ccc;
+  color: #fff;
   padding: 20px 0;
+  text-align: center;
 }
 
 .informacion h2 {
-  text-align: center;
   font-size: 40px;
   padding: 0;
   margin-bottom: 20px;
+}
+
+.informacion p {
+  font-size: 18px;
 }
 
 .recetas {
@@ -191,25 +212,39 @@ p {
 .footer {
   background-color: #000;
   color: #ccc;
+  padding: 20px 0;
 }
 
 .footer .contenedor-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer .contenedor-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .redes-sociales a i {
   color: #fff;
   font-size: 22px;
-  margin: 0 10px;
-  padding-right: 10px;
+  margin: 0 20px;
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .redes-sociales a i {
+    padding-bottom: 0;
+  }
 }
 
 .colapsado a {
@@ -329,7 +364,60 @@ p {
   background-color: #090;
 }
 
+.btn-enviar:hover {
+  color: #fff;
+  background-color: #007000;
+}
+
 .btn-reestablecer {
   background-color: #FAA900;
+}
+
+.btn-reestablecer:hover {
+  color: #fff;
+  background-color: #d18d00;
+}
+
+.cursos {
+  text-align: center;
+}
+
+.curso {
+  text-align: left;
+  padding: 50px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+  .curso {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+.curso:last-child {
+  border: none;
+}
+
+.texto-curso h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.texto-curso h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.texto-curso p {
+  font-size: 18px;
+}
+
+.texto-curso p i {
+  color: #FAA900;
 }
 /*# sourceMappingURL=app.css.map */

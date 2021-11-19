@@ -1,3 +1,7 @@
+.bg-negro{
+    background-color: $negro;
+}
+
 .banner {
     background-image: url(../img/banner.jpg);
     background-position: center right;
@@ -8,10 +12,13 @@
 .header {
     height: 600px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h1 {
         color: $blanco;
-        margin: 150px 0 0 0;
+        
     }
 }
 
@@ -19,7 +26,7 @@
     display: inline-block;
     color: $blanco;
     font-size: 35px;
-    padding: 30px 0;
+    padding: 10px 0;
 
     span {
         color: $amarillo;
@@ -31,23 +38,36 @@
     }
 }
 
-.navegacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0;
+.navegacion{
+    i{
+        color: $blanco;
+        font-size: 35px;
+    }
 
-    li{
-        a {
-            color: $blanco;
-            font-size: 18px;
-            padding: 20px 0;
-            transition: all .3s ease;
+    .container-fluid{
+        padding: 0;
+    }
+}
 
-            &:hover {
-                color: $amarillo;
-            }
+.nav-secciones{
+    justify-content: flex-end;
+    
+    a{
+        color: $blanco;
+        margin-right: 20px;
+        font-size: 18px;
+        text-align: center;
+        border-bottom: 1px solid rgba($gris, 0.1);
+        @media (min-width: 768px) {
+            border: none;
+        }
+
+        &:hover{
+            color: $amarillo;
+        }
+
+        &:last-child{
+            border: none;
         }
     }
 }
