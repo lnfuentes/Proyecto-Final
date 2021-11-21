@@ -22,8 +22,16 @@
     text-align: center;
 
     .recetas-destacadas{
+        &:hover{
+            h3{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
         .imagen-destacada{
             overflow: hidden;
+            cursor: pointer;
             img{
                 transition: .3s all ease-in-out;
                 &:hover{
